@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* body */
+
+body {
+  background-color: rgb(244, 170, 41) !important;
+  background-image: url(../images/background-adare-restaurant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+}
+
+/* header */
+.container .header {
+  text-align: center;
+  height: 25vh;
+}
+
+/* img logo */
+.container .header .img-container {
+  height: 28vh;
+}
+.container .header .img-container .img-logo {
+  height: 15vh;
+}
+
+/* navbar */
+
+.container .header .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 45vw;
+  margin: 0 auto;
+}
+.container .header .navbar .nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.5s;
+}
+
+/* efecto hover - nav-item */
+
+.container .header .navbar .nav-item:hover {
+  color: rgb(244, 170, 41);
+  text-decoration: underline;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+/* main content */
+
+.container .main-container {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.container .main-container .main-container-text {
+  color: white;
+  padding-top: 3rem;
+}
+
+.container .main-container .main-container-text h1 {
+  font-family: "rubik", sans-serif;
+  font-size: 4em;
+  transition: 0.3s;
+}
+
+.container .main-container .main-container-text h1:hover {
+  text-shadow: 0.08em 0.08em rgb(244, 170, 41);
+  transition: 0.3s;
+}
+
+.container .main-container .main-container-text article {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.container .main-container .main-container-text p {
+  color: rgb(218, 218, 218);
+  font-family: "roboto";
+  font-size: 1.1em;
+}
+
+.container .main-container .main-container-text p strong a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.09em 0.09em rgb(244, 170, 41);
+}
+
+/* footer */
+
+.container .footer {
+  color: white;
+}
+
+.container .footer h4 {
+  font-size: 1em;
+  text-align: center;
+  font-family: "roboto";
+  font-weight: 100;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container .header .navbar {
+    width: 50vw;
+  }
+}
