@@ -3,7 +3,6 @@
 /* iconos Bootstrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-
 body {
    background-color: #dbdbdd !important;
    font-family: "rubik", sans-serif !important;
@@ -11,10 +10,10 @@ body {
 
 /* Header Section */
 
-.navbar ul{
+.navbar ul {
    margin: 0;
 }
-.header{
+.header {
    margin-bottom: 2rem;
 }
 
@@ -56,32 +55,32 @@ body {
    box-shadow: 0px 5px 10px 0px rgba(89, 89, 89, 0.54) !important;
 }
 
-.main-container .bio .btn{
+.main-container .bio .btn {
    background-color: black !important;
    color: white !important;
    border: none;
-   transition: .2s;
+   transition: 0.2s;
 }
 
-.main-container .bio .btn:hover{
+.main-container .bio .btn:hover {
    background-color: #fabc3f !important;
    color: black !important;
    border: none;
-   transition: .2s;
+   transition: 0.2s;
 }
 
 .card {
    box-shadow: 0px 5px 10px 0px rgba(89, 89, 89, 0.54) !important;
    padding: 0 !important;
 }
-.card-body{
+.card-body {
    text-align: center;
 }
 
-.card .card-body .card-links a{
-   text-decoration: none ;
+.card .card-body .card-links a {
+   text-decoration: none;
 }
 
-.contact-form .form textarea{
+.contact-form .form textarea {
    height: 8rem;
 }
