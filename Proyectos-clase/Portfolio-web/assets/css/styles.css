@@ -13,6 +13,7 @@ body {
 .navbar ul {
    margin: 0;
 }
+
 .header {
    margin-bottom: 2rem;
 }
@@ -30,6 +31,9 @@ body {
    display: flex;
    justify-content: space-around;
    list-style: none;
+}
+.header .navbar .menu-navbar a {
+   width: 100%;
 }
 .header .navbar .menu-navbar li a {
    text-decoration: none;
@@ -51,7 +55,7 @@ body {
    text-align: center !important;
 } */
 .main-container .img-container img {
-   width: 20vw;
+   max-width: 200px;
    box-shadow: 0px 5px 10px 0px rgba(89, 89, 89, 0.54) !important;
 }
 
@@ -83,4 +87,59 @@ body {
 
 .contact-form .form textarea {
    height: 8rem;
+}
+
+/* media query */
+
+@media (min-width: 500px) and (max-width: 784px) {
+   .header .navbar .menu-navbar {
+      width: auto !important;
+   }
+   .contact-form .form .btn-container a {
+      width: 100% !important;
+   }
+   .contact-form .form .btn-container {
+      display: flex;
+      justify-content: center !important;
+   }
+}
+@media (max-width: 500px) {
+   .navbar {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   .navbar ul {
+      padding: 0;
+      margin-top: 1rem;
+   }
+
+   .navbar .menu-navbar {
+      flex-direction: column;
+   }
+
+   .main-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   .main-container .bio .btn {
+      width: 70%;
+   }
+   .project-box {
+      display: flex !important;
+      flex-direction: column !important;
+   }
+
+   .card {
+      width: 85% !important;
+      margin-bottom: 2em;
+   }
+   .contact-form .form .btn-container a {
+      width: 100% !important;
+   }
+   .contact-form .form .btn-container {
+      display: flex;
+      justify-content: center !important;
+   }
 }
