@@ -1,0 +1,136 @@
+/* ------- SubPagina Promociones------- */
+
+/* body */
+.promociones-body {
+   padding-top: 70px;
+   font-family: "suse", sans-serif;
+}
+
+/* Contenido principal */
+.promos-container h1 span {
+   color: var(--rojo);
+   font-weight: bold;
+}
+.sepador-hr {
+   border: none;
+   height: 0.4px;
+   margin-top: 2rem;
+   background-color: var(--grisOscuro); /* Color de la línea */
+}
+.promos-container .categorias-promos {
+   display: flex;
+   justify-content: space-between;
+   gap: 8px;
+   margin: 3rem 0;
+   flex-wrap: wrap;
+   height: auto;
+   position: sticky;
+   top: 67px;
+   z-index: 90;
+   background-color: var(--blanco);
+   padding: 10px 0;
+}
+.promos-container .categorias-promos section:hover {
+   background-color: var(--negro);
+   color: var(--blanco);
+   cursor: pointer;
+}
+
+/* Media query 761px */
+@media (max-width: 761px) {
+   /* Contenido principal*/
+   .promos-container .categorias-promos {
+      position: static;
+   }
+}
+
+/* Media query personalizado 731px */
+@media (min-width: 488px) and (max-width: 731px) {
+   /* body */
+   .promociones-body {
+      padding-top: 66px;
+   }
+   /* Contenido principal*/
+   .promos-container .row {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      justify-content: center !important;
+   }
+   .promos-container .row .card {
+      width: 95% !important;
+      margin: 0 auto !important;
+   }
+}
+
+/* Media query mobile 488px */
+@media (min-width: 445px) and (max-width: 488px) {
+   /* Contenido principal*/
+   .promos-container .row {
+      display: grid !important;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-content: center !important;
+   }
+   .promos-container .row .card {
+      width: 90% !important;
+      margin: 0 auto !important;
+   }
+}
+
+/* Media query mobile L 445px */
+@media (min-width: 100px) and (max-width: 445px) {
+   /* body */
+   .promociones-body {
+      padding-top: 116px !important;
+   }
+
+   /* header*/
+   .header .container-header {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr;
+      width: 80%;
+      margin: 0 auto;
+   }
+   .container-header .logo-container {
+      grid-column: 1;
+      grid-row: 1;
+      width: 100% !important;
+      text-align: center !important;
+   }
+   .container-header .buscador {
+      grid-column: 1/3;
+      grid-row: 2;
+      margin: 0.2rem auto !important;
+      width: 70vw !important;
+   }
+   .container-header .iconos-header {
+      grid-column: 2;
+      grid-row: 1;
+      margin: 0 auto !important;
+   }
+   .header .container-header .logo-container img {
+      width: 80% !important;
+   }
+
+   /* Contenido Principal */
+   .promos-container .row {
+      display: grid !important;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-content: center !important;
+   }
+   .promos-container .row .card {
+      width: 90% !important;
+      margin: 0 auto !important;
+   }
+}
+
+/* Media query mobile 310px*/
+@media (min-width: 100px) and (max-width: 310px) {
+   /* Contenido Principal */
+   .promos-container .categorias-promos {
+      flex-direction: column;
+   }
+}
